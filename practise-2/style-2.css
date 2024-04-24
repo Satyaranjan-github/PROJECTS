@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+div{
+    width: 40%;
+    border: 2px solid white;
+    padding:10px;
+    border-radius: 10px;
+    background-color: bisque;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 2px 3px 1px white;
+}
+
+button{
+     background-color: red;
+     box-shadow: 1px 1px black;
+     font-size: 20px;
+     font-family: verana;
+     font-weight: 600;
+     border-radius: 5px;
+     outline: none;
+     margin:10% 0 0 40% ;   
+     /* margin:top right button left; */
+}
+button:hover{
+    letter-spacing: 0.25rem;
+}
+#jok hr{
+        border: none;
+        height: 5px;
+        background-color: rgb(39, 40, 41);
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+    }

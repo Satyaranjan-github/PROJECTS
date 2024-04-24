@@ -1,0 +1,46 @@
+.content{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.content input,textarea{
+    height:50px;
+    width: 350px;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+span{
+    color: red;
+}
+body{
+    background: url("sat2.jpg");
+    color: rgb(17, 17, 17);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media(max-width:800px){
+    .forminput{
+        width: 80vh;
+    }
+}
+textarea{
+    padding-top:10px;
+    margin-bottom: 20px;
+}
+#sub{
+    width: 370px;
+}
+#sub:hover{
+    cursor: pointer;
+    letter-spacing: 0.25rem;
+}

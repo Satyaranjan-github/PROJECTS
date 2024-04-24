@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(56, 240, 62);
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.text ul {
+    position: relative;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.text ul li {
+    position: absolute;
+    list-style-type: none;
+    right: 10px;
+    cursor: pointer;
+}
+
+span {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    float: right;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 900;
+}

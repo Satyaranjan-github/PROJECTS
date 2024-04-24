@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sip calculator</title>
+    <link rel="stylesheet" href="pracstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="myform" method="post">
+            <h1>SIP Calculator</h1>
+            <table>
+                <tr>
+                    <td>Enter Amount:</td>
+                    <td><input type="number" id="amount" value="4000"></td>
+                </tr>
+                <tr>
+                    <td>Enter Time Period(in years):</td>
+                    <td><input type="number" id="time" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Enter Rate of Interest:</td>
+                    <td><input type="number" id="rate" value="12"></td>
+                </tr>
+                <tr>
+                    <!-- <td><button type="submit" id="sub">Reset</button></td> -->
+                    <td><button type="submit" id="sub">Calculate</button></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+    <script>
+        document.getElementById("myform").addEventListener("submit", sipfunction)
+        function sipfunction(e) {
+            e.preventDefault()
+            const monthlyInvestment = parseFloat(document.getElementById('amount').value);
+            const years = parseFloat(document.getElementById('time').value)
+            const rate = parseFloat(document.getElementById('rate').value) / 100;
+
+            const months = years * 12;
+            const monthlyRate = rate / 12;
+            const futureValue = monthlyInvestment * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) * (1 + monthlyRate);
+
+            let investedAmt = monthlyInvestment * months
+            let totalValue = futureValue.toFixed(2)
+            let estReturn = totalValue - investedAmt
+   
+             alert("Investedty Amount= " + investedAmt+ "\n" + "Total Value= " + totalValue + "\n" + "Estimated Return= " + estReturn)
+          
+            //  document.getElementById("result").innerHTML = "Invested Amount= " + investedAmt+ "\n" + "Total Value= " + totalValue + "\n" + "Estimated Return= " + estReturn
+           
+        }
+
+
+    </script>
+</body>
+
+</html>
